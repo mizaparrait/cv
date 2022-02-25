@@ -1,0 +1,133 @@
+:root{
+  --color-black: rgb(7, 6, 6);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-blue-dark: rgb(1, 38, 68);
+  --color-blue-medium: rgb(43, 94, 136);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-black);
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-logo{
+  margin-left: 20px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  line-height: 50px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.nav .btn-menu-ham{
+  display: none;
+}
+
+.nav .nav-menu{
+  display: flex;
+  width: 50%;
+  margin-right: 20px;
+  line-height: 50px;
+}
+
+.nav .nav-menu li{
+  display: table-cell;
+  width: 100%;
+}
+
+.nav .nav-menu li a{
+  position: relative;
+  display: block;
+  padding: 6px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav .nav-menu > li > a span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  top: -55px;
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav .nav-menu > li > a span .icon{
+  display: block;
+  line-height: 40px;
+}
+
+.nav .nav-menu li a .bg-icon1{
+  background-color: var(--color-blue-dark);
+}
+
+.nav .nav-menu li a .bg-icon2{
+  background-color: var(--color-blue-medium);
+}
+
+.nav .nav-menu li a .bg-icon3{
+  background-color: var(--color-blue-dark);
+}
+
+.nav .nav-menu li a .bg-icon4{
+  background-color: var(--color-blue-medium);
+}
+
+.nav .nav-menu > li > a:hover > span{
+  top: 0;
+}
+
+@media (max-width: 700px){
+
+  .nav .btn-menu-ham{
+    display: block;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  .nav .nav-menu{
+    position: fixed;
+    top: 50px;
+    left: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: #2c3e50;
+    transition: .3s;
+  }
+
+  .nav .nav-menu_visible{
+    left: 0;
+  }
+
+  .nav .nav-menu li a span{
+    display: none;
+  }
+}
+
