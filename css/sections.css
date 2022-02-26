@@ -2,5 +2,82 @@
   --color-black: rgb(7, 6, 6);
   --color-white: rgba(255, 255, 255, 1);
 }
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.profile-container .profile-img{
+  margin-bottom: 5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url('https://i.imgur.com/rJ06XPB.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-container p{
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.skills-container{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-white);
+}
+
+.skills-container .about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.about-me h3{
+  width: 100%;
+  height: 100px;
+  padding-left: 10%;
+  line-height: 100px;
+  font-size: 1.4rem;
+}
+
+.about-me p{
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.about-me input{
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: rgb(24, 131, 24);
+  color: var(--color-white);
+}
+
+.skills-container .slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.slider-container .slider{
+  width: 500px;
+  height: 400px;
+  background-color: red;
+}
   /*background-image: url('https://i.imgur.com/pU4vTvK.jpg'); <- Imagen de fondo de section
   background-image: url('https://i.imgur.com/rJ06XPB.jpg'); <- Imagen de perfil */
