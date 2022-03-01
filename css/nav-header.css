@@ -7,6 +7,7 @@
 
 header{
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,11 +22,17 @@ header{
 
 .nav .nav-logo{
   margin-left: 20px;
-  padding: 0 20px;
+  padding: 0 15px;
   font-size: 1.2rem;
-  line-height: 50px;
+  line-height: 45px;
   color: var(--color-white);
   text-decoration: none;
+}
+
+.nav .llaves{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(1, 22, 117);
 }
 
 .nav .btn-menu-ham{
@@ -128,6 +135,16 @@ header{
 
   .nav .nav-menu li a span{
     display: none;
+  }
+
+  .nav .nav-menu .nav-item_1{
+    border-left: 5px solid var(--color-blue-dark);
+    border-right: 5px solid var(--color-blue-dark);
+  }
+
+  .nav .nav-menu .nav-item_2{
+    border-left: 5px solid var(--color-blue-medium);
+    border-right: 5px solid var(--color-blue-medium);
   }
 }
 

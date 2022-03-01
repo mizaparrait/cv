@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 650px;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -28,10 +28,16 @@
   color: var(--color-white);
 }
 
+.profile-container p .title-mark{
+  font-weight: bold;
+  color: rgb(4, 88, 199);
+}
+
 .skills-container{
   display: flex;
   width: 100%;
   height: 600px;
+  padding-top: 30px;
   background-color: var(--color-white);
 }
 
@@ -40,6 +46,7 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
+  height: 100%;
 }
 
 .about-me h3{
@@ -58,26 +65,121 @@
 }
 
 .about-me input{
-  width: 100px;
+  width: 120px;
   height: 50px;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   background-color: rgb(24, 131, 24);
   color: var(--color-white);
+  transition: .3s;
 }
 
-.skills-container .slider-container{
+.about-me input:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 2px 8px var(--color-black);
+  cursor: pointer;
+}
+
+.skills-container .imgs-container{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50%;
 }
 
-.slider-container .slider{
-  width: 500px;
-  height: 400px;
-  background-color: red;
+.imgs-container img{
+  width: 100%;
+}
+
+.projects-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 580px;
+  background-color: var(--color-white);
+}
+
+.project-container{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.project-container figure{
+  position:relative;
+   height: 250px;
+   cursor: pointer;
+   width: 350px;
+   overflow: hidden;
+   border-radius: 6px;
+   box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.project-container figure img{
+   width: 100%;
+   height: 100%;
+   transition: all 400ms ease-out;
+   will-change: transform;
+}
+.project-container figure .capa{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,103,123,0.7);
+   transition: all 400ms ease-out;
+   opacity: 0;
+   visibility: hidden;
+  text-align: center;
+}
+.project-container figure:hover > .capa {
+   opacity: 1;
+   visibility: visible;
+}
+.project-container figure:hover > .capa h3{
+   margin-top: 70px;
+   margin-bottom: 15px;
+}
+.project-container figure:hover > img{
+   transform: scale(1.3);
+}
+.project-container figure .capa h3{
+   color: #fff;
+   font-weight: 400;
+   margin-bottom: 120px;
+   transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+.project-container figure .capa p{
+   color: #fff;
+   font-size: 15px;
+   line-height: 1.5;
+   width: 100%;
+   max-width: 220px;
+   margin: auto;
+}
+
+
+
+@media (max-width: 700px){
+  .skills-container{
+    flex-direction: column;
+    height: 1000px;
+    padding-top: 50px;
+  }
+
+  .skills-container .about-me{
+    width: 100%;
+  }
+
+  .skills-container .imgs-container{
+    width: 100%;
+  }
+
+  .profile-container p{
+    font-size: 1.4rem;
+  }
 }
   /*background-image: url('https://i.imgur.com/pU4vTvK.jpg'); <- Imagen de fondo de section
   background-image: url('https://i.imgur.com/rJ06XPB.jpg'); <- Imagen de perfil */

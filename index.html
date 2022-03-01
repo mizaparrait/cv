@@ -8,36 +8,60 @@
     <link rel="stylesheet" type="text/css" href="./css/sections.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%22100%22>👨‍💻</text></svg>" />
     <title>Mizael Parra</title>
   </head>
   <body>
     <!-- Barra de navegacion-->
     <header>
       <div class="nav">
-        <a class="nav-logo" href="#">Logo</a><!-- Logotipo vinculado al home del sitio-->
+        <a class="nav-logo" href="#"><span class="llaves">{</span> M/P <span class="llaves">}</span></a><!-- Logotipo vinculado al home del sitio-->
         <button class="btn-menu-ham"><i class="fas fa-bars"></i></button><!-- Boton toggle para activar menu responsive-->
         <!-- Opciones de navegacion-->
         <ul class="nav-menu">
-          <li><a href="#"><span class="bg-icon1"><i class="icon fas fa-home"></i></span>Home</a></li>
-          <li><a href="#"><span class="bg-icon2"><i class="icon fas fa-clipboard"></i></span>Skills</a></li>
-          <li><a href="#"><span class="bg-icon3"><i class="icon fas fa-folder-open"></i></span>Projects</a></li>
-          <li><a href="#"><span class="bg-icon4"><i class="icon fas fa-envelope"></i></span>Contact</a></li>
+          <li class="nav-item_1"><a href="#home"><span class="bg-icon1"><i class="icon fas fa-home"></i></span>Home</a></li>
+          <li class="nav-item_2"><a href="#skills"><span class="bg-icon2"><i class="icon fas fa-clipboard"></i></span>Skills</a></li>
+          <li class="nav-item_1"><a href="#projects"><span class="bg-icon3"><i class="icon fas fa-folder-open"></i></span>Projects</a></li>
+          <li class="nav-item_2"><a href="#"><span class="bg-icon4"><i class="icon fas fa-envelope"></i></span>Contact</a></li>
         </ul>
       </div>
     </header>
-    <section class="profile-container">
-      <div class="profile-img"></div>>
-      <p>!Hola¡ soy Mizael Parra</p>
+    <section class="profile-container" id="home">
+      <div class="profile-img"></div>
+      <p>!Hola¡ mi nombre es Mizael Parra<br><span>&nbsp&nbsp&nbsp y soy un <span class="title-mark">Desarrollador Web</span></span></p>
     </section>
-    <section class="skills-container">
+    <section class="skills-container" id="skills">
+      <div class="imgs-container">
+        <img src="https://i.imgur.com/dN1FClO.png" />
+      </div>
       <div class="about-me">
         <h3>About me</h3>
         <p>Soy un desarrollador Web.</p>
-        <input type="submit" name="Descargar CV" />
+        <input type="submit" value="Download CV" />
       </div>
-      <div class="slider-container">
-        <div class="slider"></div>
+    </section>
+    <section class="projects-container" id="projects">
+      <div class="project-container">
+        <figure>
+          <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png">
+          <div class="capa">
+              <h3>SLee Dw</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+          </div>
+        </figure>
       </div>
+      <div class="project-container">
+        <figure>
+          <img src="https://res.cloudinary.com/slee-dw/image/upload/v1597941457/meta-tutoriales_vbnc37.png">
+          <div class="capa">
+              <h3>SLee Dw</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section class="contact-container">
+      
     </section>
     <script src="https://kit.fontawesome.com/0a449e8425.js" crossorigin="anonymous"></script>
     <script src="./media-scripts/nav-response.js"></script>
