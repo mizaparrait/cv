@@ -62,6 +62,7 @@
   height: 400px;
   margin: 0 auto;
   font-size: 1.2rem;
+  line-height: 30px;
 }
 
 .about-me input{
@@ -160,17 +161,77 @@
    margin: auto;
 }
 
+.project-container figure .capa .btn-github{
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: orangered;
+  color: var(--color-white);
+  transition: .3s;
+}
 
+.project-container figure .capa .btn-github:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.project-container figure .capa .btn-site{
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(3, 122, 19);
+  color: var(--color-white);
+  transition: .3s;
+}
+
+.project-container figure .capa .btn-site:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-white);
+}
+
+.contact-container a{
+  font-size: 1rem;
+  margin: 0 20px;
+}
+
+.contact-container a img{
+  width: 50px;
+  background-color: var(--color-white);
+  transition: .3s;
+}
+
+.contact-container a img:hover{
+  transform: scale(1.2);
+}
 
 @media (max-width: 700px){
   .skills-container{
     flex-direction: column;
-    height: 1000px;
+    height: 1100px;
     padding-top: 50px;
   }
 
   .skills-container .about-me{
     width: 100%;
+  }
+
+  .about-me input{
+    margin-top: 150px;
   }
 
   .skills-container .imgs-container{
@@ -180,6 +241,29 @@
   .profile-container p{
     font-size: 1.4rem;
   }
+
+  .projects-container{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    padding-bottom: 50px;
+  }
+
+  .project-container figure{
+    width: 400px;
+    height: 300px;
+  }
+
+  .project-container figure img{
+    width: 400px;
+    height: 300px;
+  }
+
+  .contact-container{
+    height: 150px;
+  }
 }
   /*background-image: url('https://i.imgur.com/pU4vTvK.jpg'); <- Imagen de fondo de section
   background-image: url('https://i.imgur.com/rJ06XPB.jpg'); <- Imagen de perfil */
+
+  
