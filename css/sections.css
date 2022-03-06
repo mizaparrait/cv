@@ -65,18 +65,22 @@
   line-height: 30px;
 }
 
-.about-me input{
+.about-me .input{
   width: 120px;
   height: 50px;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 90px;
   background-color: rgb(24, 131, 24);
   color: var(--color-white);
   transition: .3s;
 }
 
-.about-me input:hover{
+.about-me .input:hover{
   transform: scale(1.1);
   box-shadow: 1px 2px 8px var(--color-black);
   cursor: pointer;
@@ -150,11 +154,12 @@
    font-weight: 400;
    margin-bottom: 120px;
    transition: all 400ms ease-out;
-    margin-top: 30px;
+  margin-top: 10px;
 }
+
 .project-container figure .capa p{
    color: #fff;
-   font-size: 15px;
+   font-size: 1rem;
    line-height: 1.5;
    width: 100%;
    max-width: 220px;
@@ -249,7 +254,13 @@
     padding-bottom: 50px;
   }
 
+  .project-container{
+    width: 100%;
+  }
+
   .project-container figure{
+    border-radius: 0;
+    box-shadow: none;
     width: 400px;
     height: 300px;
   }
@@ -257,6 +268,9 @@
   .project-container figure img{
     width: 400px;
     height: 300px;
+  }
+  .project-container figure .capa p{
+    font-size: 1.2rem;
   }
 
   .contact-container{
